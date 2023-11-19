@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-juanovt10-fsf-hello-djan-arhgje01u0.us2.codeanyapp.com',
-    'https://juanovt10-django-todo-app-1c81ec1206ac.herokuapp.com/']
+    'juanovt10-django-todo-app-1c81ec1206ac.herokuapp.com']
 
 
 # Application definition
