@@ -12,19 +12,7 @@
     <form method="POST" action="add">
       <!-- This needs to be added to guarantee that the data posted is comming
         from the todo list app and not from another website -->
-      {% csrf_token %}
-      <div>
-        <p>
-          <label for="id_name">Name: </label>
-          <input type="text" id="id_name" name="item_name" />
-        </p>
-      </div>
-      <div>
-        <p>
-          <label for="id_done">Done: </label>
-          <input type="checkbox" id="id_done" name="done" />
-        </p>
-      </div>
+      {% csrf_token %} {{ form.as_p }}
       <div>
         <p>
           <button type="submit">Add Item</button>
