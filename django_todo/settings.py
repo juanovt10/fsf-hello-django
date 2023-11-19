@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-bny_br8-71zb7%j_8it%3$=64cn%uv=tm-&k1h$stnd!+f_p^7
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-juanovt10-fsf-hello-djan-arhgje01u0.us2.codeanyapp.com']
+    '8000-juanovt10-fsf-hello-djan-arhgje01u0.us2.codeanyapp.com',
+    'https://juanovt10-django-todo-app-1c81ec1206ac.herokuapp.com/']
 
 
 # Application definition
