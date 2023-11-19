@@ -32,9 +32,14 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = [
-    '8000-juanovt10-fsf-hello-djan-arhgje01u0.us2.codeanyapp.com',
-    os.environ.get('HEROKU_HOSTNAME')]
+# ALLOWED_HOSTS = [
+#     '8000-juanovt10-fsf-hello-djan-arhgje01u0.us2.codeanyapp.com',
+#     os.environ.get('HEROKU_HOSTNAME')]
+if development == False:
+    ALLOWED_HOSTS = [
+        '8000-juanovt10-fsf-hello-djan-arhgje01u0.us2.codeanyapp.com']
+else:
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
