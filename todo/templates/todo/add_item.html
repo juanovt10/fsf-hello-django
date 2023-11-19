@@ -10,6 +10,9 @@
     <h1>Add a Todo Item</h1>
 
     <form method="POST" action="add">
+      <!-- This needs to be added to guarantee that the data posted is comming
+        from the todo list app and not from another website -->
+      {% csrf_token %}
       <div>
         <p>
           <label for="id_name">Name: </label>
